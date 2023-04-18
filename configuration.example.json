@@ -6,8 +6,11 @@
 			"role": 0,
 			"take": [0]
 		},
-		"media_channels": [0],
-		"logging_channel": 0
+		"logging_channel": 0,
+		"censor": {
+			"additions": ["word", "another word"],
+			"excludes": ["word", "another word"]
+		}
 	},
 	"administrators": {
 		"roles": [0],

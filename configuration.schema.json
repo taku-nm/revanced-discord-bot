@@ -30,6 +30,27 @@
 				"logging_channel": {
 					"type": "integer",
 					"description": "The id of the channel to send logs to."
+				},
+				"censor": {
+					"type": "object",
+					"properties": {
+						"additions": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							},
+							"description": "A list of words to add to the 'Standard' wordlist to censor in usernames and nicknames, refer to https://docs.rs/censor/latest/censor/.",
+							"uniqueItems": true
+						},
+						"removals": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							},
+							"description": "A list of words to remove from the 'Standard' wordlist to censor in usernames and nicknames, refer to https://docs.rs/censor/latest/censor/.",
+							"uniqueItems": true
+						}
+					}
 				}
 			}
 		},
